@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/add/add",
+    "pages/index02/index",
     "pages/phoneDetail/phoneDetail",
     "pages/index/index",
     "pages/userConsole/userConsole",
