@@ -1,0 +1,25 @@
+# 电商小程序
+
+  - 前端框架 vant 
+    1. npm i @vant/weapp -s --production
+    来自有赞，微信生态得为长
+    2. npm init -y
+    安装第三方插件 
+    3. 构建
+    miniprogram_npm 第三方包
+    @vant/weapp/button/index  
+
+    API在哪里？
+    商品列表 
+    apifm-wxapi  提供数据
+
+
+- 电商项目的感觉
+  搜索栏 
+  导航栏
+  banners
+  商品推荐
+  商品列表
+
+- 总结一下搜索体验 把自己当小白
+  placeholder + padding-left + bindinput + bindConfirm
