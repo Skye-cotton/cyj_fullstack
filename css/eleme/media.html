@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background: green;
+        }
+        @media screen and (max-device-width: 768px){
+            .box{
+                background-color: pink;
+            }
+        }
+        @media screen and (max-device-width: 414px){
+            .box{
+                background-color: red;
+            }
+        }
+        @media screen and (max-device-width: 375px){
+            .box{
+                background-color: yellow;
+            }
+        }
+        /*下面的会覆盖上面的*/
+        
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
