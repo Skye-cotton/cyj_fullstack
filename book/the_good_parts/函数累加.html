@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // function hd(){
+    //     let n=1;
+    //     return function sum(){
+    //         console.log(++n);
+    //     }
+    //     sum();
+    // }
+    // let a = hd();
+    // a();
+    // a();
+
+    // function Hd(){
+    //     let n=1;
+    //     this.sum = function(){
+    //         console.log(++n);
+    //     };
+    // }
+    // let a = new Hd();
+    // a.sum();
+    // a.sum();
+
+    let arr = [1,26,5,6,8,9,14,26,2];
+    function between(a,b){
+        return function(v){
+            return v >=a && v<= b;
+        };
+    }
+    console.log(arr.filter(between(3,9)));
+</script>
+</html>
