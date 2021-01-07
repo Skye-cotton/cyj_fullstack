@@ -5,7 +5,7 @@ console.log(typeof arr);
 arr.push(4);//不报错，const 同类型的可以改变
 let a;//声明一个变量 undefined=>类型未定义
 console.log(typeof a);
-a = 1;
+a = [1,2,3];
 console.log(typeof a);
 
 function cat(){
