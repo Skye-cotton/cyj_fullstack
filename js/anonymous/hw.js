@@ -14,13 +14,25 @@ class Book{
 }
 // 作业 返回所有对象上可以调用的方法或属性 attrs
 const jsDontKnow = new Book('111','aa','bbbb');
-const attrs = [...Object.getOwnPropertyNames(jsDontKnow), ...Object.getOwnPropertyNames(Book.prototype),
-     ...Object.getOwnPropertyNames(Object.prototype),...Object.getOwnPropertyNames(Object.__proto__)];
-console.log(attrs);
+const n=jsDontKnow;
+const arrs =[]
+// while(Object.getOwnPropertyNames(n) != null){
+    
+    
+//     // n=n.parent()
+// }
 
-var n=jsDontKnow;
-while(Object.getOwnPropertyNames(n) != null){
-    const arrs =[]
+// if(Object.getOwnPropertyNames(n) != null){
+//     arrs.push(...Object.getOwnPropertyNames(n))
+// }
+
+function fn(){
+   const a= Object.getOwnPropertyNames(jsDontKnow).__proto__
+//    console.log(a);
+return a
+}
+
+while(Object.getOwnPropertyNames(n).__proto__ != null){
+   
     arrs.push(...Object.getOwnPropertyNames(n))
-    n = n.__proto__
 }

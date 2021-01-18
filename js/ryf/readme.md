@@ -25,6 +25,7 @@ fn.apply(绑定this,[参数1，参数2，....])
 2. prototype模式
 3. 直接继承prototype
 4. 利用空对象作为中介
+5. extends 关键字继承 ：使用this关键字之前要调用super
 
 2和3 相比，3的优点：效率比较高（不用执行和建立 Animal的实例），缺点是Cat.prototype和Animal.prototype指向同一个对象,
-在理解上有点不妥，会改变父类的原型对象
+在理解上有点不妥，会改变父类的原型对象。4就很好的解决了2和3的缺点 

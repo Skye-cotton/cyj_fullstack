@@ -23,3 +23,4 @@ function Cat(name,color){
 var cat1 = new Cat("大毛","黄色")
 console.log(cat1.species);
 // Cat 应该是Animal的子类， 继承？
+ 

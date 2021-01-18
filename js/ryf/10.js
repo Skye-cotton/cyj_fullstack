@@ -12,4 +12,5 @@ Cat.prototype = new F();//内存不大，没有2的效率问题，也没有第3�
 Cat.prototype.constructor =Cat;
 var cat1 = new Cat('小花','白色')
 console.log(Animal.prototype.constructor);
-console.log(cat.species);
+console.log(cat1.species);
+    
