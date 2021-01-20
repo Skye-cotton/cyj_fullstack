@@ -19,5 +19,5 @@ font-style: 24px;
 }
 .user-group{
   margin-bottom: 20px;
-
+  display: block;
 }
