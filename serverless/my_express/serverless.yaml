@@ -1,0 +1,10 @@
+# express:
+#   component: '@serverless/tencent-express'
+#   inputs:
+#     region: ap-shanghai
+
+component: express 
+name: my_express
+express:
+  inputs:
+    region: ap-shanghai
