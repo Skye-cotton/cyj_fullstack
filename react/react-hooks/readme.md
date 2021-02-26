@@ -35,3 +35,26 @@ webpack-cli  4.0 版本 与webpack 5兼容问题
     npm i @types/react  @types/react-dom  react的类型约定
     ts 类型化的js
     
+
+- app.tsx
+    根组件 tsx webpack ->ts-loader->babel-loader
+- index.tsx
+    入口文件  webpack entry 打理
+
+- index 16 后，可以在函数组件里直接使用状态
+全面拥抱函数式编程
+    userState  超级函数 
+    1. 创建了name状态
+    2. setName 修改状态的方法也有了
+    3. 初始值
+- ts 就是加类型约束
+
+- 围绕着name 状态  两个组件开发实现
+    APP 父组件   状态  name:defaultUserName
+    <!-- this.state = {//Componnet
+        name:'defaultUserName'
+    } -->
+
+    //react 16 魔法函数 方便  this.   this.setState....
+    //setName  相当于this.setState({})
+    const [name, setName] = React.useState('defaultUserName')

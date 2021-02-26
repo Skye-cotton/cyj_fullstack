@@ -1,9 +1,10 @@
-import * as React from 'react'
-import * as ReactDOM from 'react-dom'
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import { App } from './app';
 
-import { HelloComponent } from './hello';
+// import { HelloComponent } from './hello';
 
 ReactDOM.render(
-    <HelloComponent username="chen" />,
+    <App />,
     document.getElementById('root')
 );
