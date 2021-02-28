@@ -3,9 +3,7 @@ import * as React from 'react';
 interface Props {
   userName: string;
   // e: React.ChangeEvent<HTMLInputElement>
-
-//   onChange: (e) => void;
-
+  // onChange: (e) => void;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 // 什么时候要写ts 什么时候容易出问题？ 类型约束
