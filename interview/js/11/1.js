@@ -12,6 +12,6 @@ arr.unshift(1) //   头部插入
  arr.forEach(item =>{
      console.log(item);
  })
-console.log(arr.join(" "));
+console.log(arr.join(" "));//join() 方法用于把数组中的所有元素放入一个字符串。
 console.log(arr.splice(0,arr.length));
 console.log(arr.map(item => item));
