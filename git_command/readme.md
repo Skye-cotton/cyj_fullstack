@@ -5,3 +5,7 @@
     2. git add . 添加修改
     3. git commit -m 'git command' 确认修改
     4. git push origin main       提交到源头
+
+.styl--->.css
+
+stylus -w style.styl -o style.css
