@@ -1,0 +1,13 @@
+<!-- wxs: weixin Script 是小程序的一套脚本语言，结合 WXML，可以构建出页面的结构。 -->
+<wxs module='theming' src='../../filter/theming.wxs'/>
+<view class='page {{ theme }}'>
+  <image mode='aspectFit' class='avatar' src='{{ theming.iconFolder(theme) }}/octoface.svg'></image>
+</view>
+
+<!-- <wxs module="m1">
+var msg = "hello world";
+
+module.exports.message = msg;
+</wxs>
+
+<view> {{m1.message}} </view> -->

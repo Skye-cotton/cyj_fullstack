@@ -1,0 +1,49 @@
+<van-image width="100%" height="200" src="https://www.gumingnc.com/_nuxt/img/8468ea9.jpg" />
+<van-divider contentPosition="left" 
+> 你好 吃火锅国家二级运动员</van-divider>
+
+<!-- 会员卡片 -->
+<view class="card1">
+  <view class="card1_top">
+    <p>茗星会员</p>
+    <p class="p1">V4</p>
+     <view class="icon1"><image src="/images/icon/LV4.png" ></image></view>
+  </view>
+  <view class="card1_bottom">
+    <van-row gutter="60">
+    <view class="bottom_left">
+      <van-col span="12">
+      <view class="icon2">  <image src="/images/icon/hym.png"></image></view>
+      <p>会员码</p>
+      </van-col>
+    </view>
+    <view class="bottom_right">
+      <van-col span="12">
+      <view class="icon2">  <image src="/images/icon/lw.png"></image>
+        </view>
+      <p>集十赠一</p>
+    </van-col>
+    </view>
+  </van-row>
+  </view>
+</view>
+
+<!-- 会员卡片二 -->
+<view class="card1">
+  <van-row gutter="20">
+  <van-col span="12">
+   <view class="card_p">会员权益</view> 
+  </van-col>
+  <van-col span="12">
+    <view class="icon3">  <image src="/images/icon/qb.png"></image>
+    </view>
+  </van-col>
+</van-row>
+</view>
+<!-- 单元格 -->
+<van-cell title="我的卡券" icon="coupon-o" is-link />
+<van-cell title="全部订单" icon="balance-list-o" is-link />
+<van-cell title="联系客服" icon="service-o" is-link />
+<van-cell title="我的资料" icon="edit" is-link />
+<van-cell title="我的消息" icon="envelop-o" is-link />
+<van-cell title="关于古茗" icon="friends-o" is-link />

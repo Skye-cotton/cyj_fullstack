@@ -1,0 +1,49 @@
+/* pages/me/me.wxss */
+/* 第一个卡片样式 */
+.card1{
+  margin: 20rpx auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 700rpx;
+    height: 300rpx;
+}
+.card1_top{
+  margin: 20rpx 40rpx;
+  padding: 0;
+}
+p:first-child{
+  font-size: large;
+  word-spacing: 4rpx;
+}
+.p1{
+  margin: 10rpx;
+  font-size: x-small;
+}
+.icon1 image{
+  width: 50rpx;
+  height: 30rpx;
+}
+.card1_bottom{
+  margin: 0 auto;
+}
+.bottom_left{
+  margin: 0 150rpx 40rpx 150rpx;
+}
+.icon2 image{
+  width: 100rpx;
+  height: 80rpx;
+}
+
+.bottom_right{
+  margin: 0 150rpx 40rpx 150rpx;
+}
+.card_p{
+  font-size: large;
+  margin: 100rpx 80rpx;
+}
+.icon3 image{
+  width: 180rpx;
+  height: 130rpx;
+  margin: 80rpx 0;
+}

@@ -1,0 +1,5 @@
+<loading hidden="{{hiddenLoading}}">数据加载中</loading>
+<view class="wrapper">
+  <view>
+  </view>
+</view>
