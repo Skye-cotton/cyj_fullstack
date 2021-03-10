@@ -1,6 +1,8 @@
 import React,{Component,Fragment} from 'react'
+import axios from 'axios'
 import './style.css'
 import XiaojiejieItem from './XiaojiejieItem'
+import Boss from './Boss'
 
 class Xiaojiejie extends Component{
     //在某一时刻，可以自动执行的函数
@@ -11,7 +13,11 @@ class Xiaojiejie extends Component{
             list:['头部按摩','精油推背']
         }
     }
-
+    // componentDidMount(){
+    //     axios.post('https://juejin.cn/post/6936565736068513829')
+    //         .then((res) =>{console.log('axios  获取数据成功' + JSON.stringify(res)); })
+    //         .catch((error) =>{console.log('axios 获取数据失败' +error);})
+    // }
    
     render() {
         // console.log('render----组件挂载中');//2
@@ -44,6 +50,7 @@ class Xiaojiejie extends Component{
                          })
                      }
                  </ul>
+                 <Boss />
              </Fragment>
         );
     }
@@ -72,3 +79,9 @@ class Xiaojiejie extends Component{
     }
 }
 export default Xiaojiejie
+
+
+// npm install axios(XXX)  //不会写入依赖
+// npm install -g axios(XXX)     //  安装全局   
+// npm install -save axios
+// npm install -save-dev axios    dev
