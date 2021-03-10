@@ -23,4 +23,6 @@
 - 在垂直方向做主元素分配高度
     display:grid+ grid-template-rows: 1fr auto;
     更优秀
-- firstChild
+- firstChild lastChild
+    childNodes  换行符会作为空的文本结点来
+    lastElementChild 

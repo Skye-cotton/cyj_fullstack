@@ -18,3 +18,30 @@
     我们用了DOM 编程， document.createElement("script)
     script.scr="https://www.runoob.com/try/ajax/jsonp.php?jsoncallback=callbackFunction"
     document.body.appendChild(script);
+
+- 文章
+    用前端实现底层
+    1. fetch Promise thenable 去服务器端通信
+    2. DOM API 
+        tree
+        document.createElement()
+        父节点.appendChild(子节点)
+        document.createTextNode()
+    HTTP 底层协议
+        请求响应    url + method
+        数据格式是  JSON
+
+    跨域 为了安全保护数据  域名 端口
+    json-server 本地 自己自带解决方案
+    JSONP fn(data) 在页面端预留一个函数fn
+
+    response 来到客户端
+    script 返回来 fn(data)
+
+    代码有一定的功能区分时，请写函数
+    createUserElment = (user) => {
+        const user = createElement;
+        return user;
+    }
+
+    es6 for of

@@ -24,17 +24,22 @@ cookie
     document.cookie  js
     httpOnly:true  ---拿不到uid  安全
 
-    前端什么都能做，练node + go 都写
+    前端什么都能做，连node + go 都写
     前端也操作cookie，有些cookie 没有那么重要
     比如一些用户选项设置，夜间模式(低安全性)，uid(高安全性)
 
 
     Cookie 与 localstorage
-    相同：都是都是文本
-    用来做存储的， 区别
+    相同：都是用来做存储的，都是文本 
+    区别：
     cookie  4Kb  用户状态，最基本用户设置
     localStorage  5MB lokijs  数据库 多存些
     用户的地址（家，公司的）  用户看了哪些内容
 
     Cookie 的性能不好
-    浪费的地方  每次http请求都会带上
+    浪费的地方  每次http请求都会带上它，有开销
+    http 是一种无状态的网络协议，Cookie 登录
+
+    http 是无状态的协议 一个请求一个返回
+    Cookie 是http 的状态的一种弥补
+    localStorage 只存在于客户端 性能好

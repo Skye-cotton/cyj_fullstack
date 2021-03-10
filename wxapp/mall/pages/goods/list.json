@@ -1,5 +1,0 @@
-{
-  "usingComponents": {
-    "van-sticky":"@vant/weapp/sticky/index"
-  }
-}

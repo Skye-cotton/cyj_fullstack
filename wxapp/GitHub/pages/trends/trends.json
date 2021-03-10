@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-    "search":"../../components/search/search",
-    "trend":"../../components/trend-item/trend-item"
-  }
-}

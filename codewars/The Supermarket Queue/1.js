@@ -8,5 +8,5 @@ function queueTime(customers, n) {
   }
   console.log(queueTime([10,3,3,2],2));
 
-  var num =[1,2,3,4];
-  console.log(num.map(Math.min()));
+  // var num =[1,2,3,4];
+  // console.log(num.map(Math.min()));
