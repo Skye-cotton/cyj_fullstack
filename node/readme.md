@@ -1,19 +1,31 @@
-1. 引入ts写node，模块化更优秀
+- 全栈  node + ts
+ BATJTMD需求 
+- 数据库
+ 端口通信  3306 -> 3000
+ node  fs http  比较复杂 慢
 
-- express @types/express
-- typescript tsc-watch  实时的编译ts ->js
-- tscongfig.json
--  "dev": "tsc-watch --onSuccess \"node dist/main.js\""
-  tsc-watch  会帮助编译dist 目录
-- 引入 express
+- MVC 
+ 数据库  ->Model -> Controller ->Router(API)
+ post 
+ someone ->http ->req(url)->router->controller->Model ->mysql2(翻译官) 
 
-1. 使用express 创建web后端服务，借助ts，全面es6化，抛弃require，拥抱es6模块
-2. 使用express 自带的路由，创建路由中间件，
-3. 用户通过路由来到服务器，控制器接管一切
-4. 控制器拿到用户请求和用户响应对象，将查询参数返回给用户
-5. 以上都模块化，一个文件一个模块 post 目录模块
+- posts add 
+  controller  -> restful  路径
+  MySQL  post   POST   (添加记录)  /posts
+  - router 在哪里？         迎宾
+  - controller             模块细分
+  - model  service         
 
-.env 放着配置  -》 dotenv  自动读取 -》模块化config目录-》app
-.gitignore .env  不上传
-数据库密码会写到代码里去，上传到GitHub
-    .env => .gitignore =>dotenv.config() => process
+- 单点入口 main.js-->app-->post
+
+express.Router()
+
+CREATE TABLE `post` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `content` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1000 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+- mysql  先建表 再操作  关系型数据库  SQL
+  MongoDB  先上车，后补票  NOSQL  json 
